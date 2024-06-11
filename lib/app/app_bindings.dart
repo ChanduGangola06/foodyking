@@ -1,4 +1,8 @@
+import 'package:foodyking/app/controllers/home_controller.dart';
+import 'package:foodyking/app/controllers/splash_controller.dart';
 import 'package:get/get.dart';
+
+import 'controllers/dashboard_controller.dart';
 
 class AppBindings extends Bindings {
   // ignore: prefer_typing_uninitialized_variables
@@ -6,5 +10,11 @@ class AppBindings extends Bindings {
   AppBindings({required this.context});
 
   @override
-  void dependencies() {}
+  void dependencies() {
+    Get.put<SplashController>(SplashController());
+    Get.put<HomeController>(HomeController());
+    Get.lazyPut<DashboardController>(
+      () => DashboardController(),
+    );
+  }
 }
