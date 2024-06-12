@@ -226,12 +226,12 @@ class _HomeViewState extends State<HomeView> {
                                                     .categoryDataList.isEmpty
                                             ? const MenuSectionShimmer()
                                             : homeMenuSection(),
-                                        homeController.featuredLoader ||
-                                                homeController
-                                                    .featuredItemDataList
-                                                    .isEmpty
-                                            ? featureditemSectionShimmer()
-                                            : featureditemSection(),
+                                        // homeController.featuredLoader ||
+                                        //         homeController
+                                        //             .featuredItemDataList
+                                        //             .isEmpty
+                                        //     ? featureditemSectionShimmer()
+                                        //     : featureditemSection(),
                                       ],
                                     ),
                                   ],
