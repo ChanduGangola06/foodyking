@@ -1,4 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:foodyking/app/controllers/home_controller.dart';
+import 'package:foodyking/app/controllers/menu_controller.dart';
 import 'package:foodyking/app/controllers/splash_controller.dart';
 import 'package:get/get.dart';
 
@@ -13,6 +15,7 @@ class AppBindings extends Bindings {
   void dependencies() {
     Get.put<SplashController>(SplashController());
     Get.put<HomeController>(HomeController());
+    Get.put<MenuuController>(MenuuController());
     Get.lazyPut<DashboardController>(
       () => DashboardController(),
     );

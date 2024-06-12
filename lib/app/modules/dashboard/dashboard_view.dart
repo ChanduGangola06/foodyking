@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:foodyking/app/controllers/cart_controller.dart';
 import 'package:foodyking/app/modules/cart/cart_view.dart';
 import 'package:foodyking/app/modules/dashboard/widgets/nav_bar_item.dart';
 import 'package:foodyking/app/modules/home/home_view.dart';
